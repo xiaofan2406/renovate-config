@@ -1,0 +1,13 @@
+{
+  "additionalReviewers": ["bchew", "xiaofan2406"],
+  "branchPrefix": "renovate-",
+  "extends": [
+    "config:base",
+    "npm:unpublishSafe",
+    "schedule:monthly",
+    ":onlyNpm",
+    ":prConcurrentLimit10"
+  ],
+  "labels": ["dependencies"],
+  "rangeStrategy": "bump"
+}
