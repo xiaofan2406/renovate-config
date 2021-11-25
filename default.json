@@ -1,13 +1,10 @@
 {
-  "additionalReviewers": ["bchew", "xiaofan2406"],
-  "branchPrefix": "renovate-",
-  "extends": [
-    "config:base",
-    "npm:unpublishSafe",
-    "schedule:monthly",
-    ":onlyNpm",
-    ":prConcurrentLimit10"
-  ],
+  "additionalReviewers": ["xiaofan2406"],
+  "branchPrefix": "dependency-",
+  "extends": ["config:base",],
   "labels": ["dependencies"],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "npm": {"stabilityDays": 7},
+  "schedule": ["every weekend"],
+  "lockFileMaintenance": {"enabled": true}
 }
