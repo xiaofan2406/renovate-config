@@ -1,7 +1,7 @@
 {
   "additionalReviewers": ["xiaofan2406"],
   "branchPrefix": "dependency-",
-  "extends": ["config:base",],
+  "extends": ["config:base"],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "npm": {"stabilityDays": 7},
