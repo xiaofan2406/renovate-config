@@ -7,5 +7,31 @@
   "npm": {"stabilityDays": 7},
   "prCreation": "not-pending",
   "schedule": ["every weekend"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["redux"],
+      "groupName": "redux"
+    },
+    {
+      "matchPackagePatterns": ["webpack"],
+      "groupName": "webpack"
+    },
+    {
+      "matchPackagePatterns": ["rollup"],
+      "groupName": "rollup"
+    },
+    {
+      "matchPackagePatterns": ["@types", "typescript"],
+      "groupName": "typescript"
+    },
+    {
+      "matchPackagePatterns": ["@testing-library"],
+      "groupName": "@testing-library"
+    }
+  ],
   "lockFileMaintenance": {"enabled": true}
 }
