@@ -9,7 +9,7 @@
   "schedule": ["every weekend"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["eslint"],
+      "matchPackagePatterns": ["^eslint"],
       "groupName": "eslint"
     },
     {
@@ -17,20 +17,24 @@
       "groupName": "redux"
     },
     {
-      "matchPackagePatterns": ["webpack"],
+      "matchPackagePatterns": ["^webpack"],
       "groupName": "webpack"
     },
     {
-      "matchPackagePatterns": ["rollup"],
+      "matchPackagePatterns": ["^rollup"],
       "groupName": "rollup"
     },
     {
-      "matchPackagePatterns": ["@types", "typescript"],
-      "groupName": "typescript"
+      "matchPackagePatterns": ["^vite", "^@vite"],
+      "groupName": "vite"
     },
     {
-      "matchPackagePatterns": ["@testing-library"],
+      "matchPackagePatterns": ["^@testing-library"],
       "groupName": "@testing-library"
+    },
+    {
+      "matchPackagePatterns": ["^@types", "^typescript"],
+      "groupName": "typescript"
     }
   ],
   "lockFileMaintenance": {"enabled": true}
