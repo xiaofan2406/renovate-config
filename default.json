@@ -4,7 +4,7 @@
   "extends": ["config:base"],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
-  "npm": {"stabilityDays": 7},
+  "npm": {"stabilityDays": 3},
   "prCreation": "not-pending",
   "schedule": ["every weekend"],
   "packageRules": [
