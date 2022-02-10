@@ -1,11 +1,12 @@
 {
   "additionalReviewers": ["xiaofan2406"],
   "branchPrefix": "dependency-",
-  "extends": ["config:base"],
+  "extends": ["config:base", "schedule:monthly"],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "npm": {"stabilityDays": 0},
-  "schedule": ["every weekend"],
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "packageRules": [
     {
       "matchPackagePatterns": ["^eslint"],
