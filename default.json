@@ -36,6 +36,5 @@
       "matchPackagePatterns": ["^@types", "^typescript"],
       "groupName": "typescript"
     }
-  ],
-  "lockFileMaintenance": {"enabled": true}
+  ]
 }
