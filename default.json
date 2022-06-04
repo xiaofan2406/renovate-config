@@ -25,12 +25,16 @@
       "groupName": "rollup"
     },
     {
+      "matchPackagePatterns": ["^postcss"],
+      "groupName": "postcss"
+    },
+    {
       "matchPackagePatterns": ["^vite", "^@vite"],
       "groupName": "vite"
     },
     {
       "matchPackagePatterns": ["^@testing-library"],
-      "groupName": "@testing-library"
+      "groupName": "testing-library"
     },
     {
       "matchPackagePatterns": ["^@types", "^typescript"],
